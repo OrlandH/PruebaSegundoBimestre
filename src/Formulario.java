@@ -86,11 +86,16 @@ public class Formulario {
                     dataOutputStream.writeUTF(anioText);
                     dataOutputStream.writeUTF(mesText);
                     dataOutputStream.writeUTF(diaText);
+                    dataOutputStream.writeUTF(color);
+                    codigo.setText("");
+                    cedula.setText("");
+                    nombre.setText("");
+                    apellido.setText("");
 
-                    JOptionPane.showMessageDialog(null, "Datos guardados exitosamente.");
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
+
             }
         });
         cargarButton.addActionListener(new ActionListener() {
