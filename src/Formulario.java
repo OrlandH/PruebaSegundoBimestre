@@ -112,7 +112,6 @@ public class Formulario {
                     mes.setSelectedItem(dataInputStream.readUTF());
                     dia.setSelectedItem(dataInputStream.readUTF());
 
-                    JOptionPane.showMessageDialog(null, "Datos cargados exitosamente.");
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
